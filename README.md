@@ -32,19 +32,19 @@ The QLearning.py file contains the Agent class, allowing for action selection an
 Call python3 main.py with the relevant arguments.
 
 optional arguments:
--  -h, --help            show this help message and exit
--  --verbose VERBOSE, bool     Print the training steps and save intermediate images
--  --height HEIGHT, int       Dungeon grid height
--  --width WIDTH, int         Dungeon grid width
--  --learning_rate LEARNING_RATE, float
+-  -h, --help,            show this help message and exit
+-  --verbose VERBOSE, bool,     Print the training steps and save intermediate images
+-  --height HEIGHT, int,       Dungeon grid height
+-  --width WIDTH, int,         Dungeon grid width
+-  --learning_rate LEARNING_RATE, float,
                         How quickly the algorithm tries to learn
--  --discount DISCOUNT, float   Discount for estimated future action
--  --iterations ITERATIONS, int
+-  --discount DISCOUNT, float,   Discount for estimated future action
+-  --iterations ITERATIONS, int,
                         Iteration count
--  --method {dsf,qlearning}
+-  --method {dsf,qlearning},
                         Method to generate the dungeon
--  --mode {train,test}   Train or test the qlearing model
--  --to_generate TO_GENERATE, int
+-  --mode {train,test},   Train or test the qlearing model
+-  --to_generate TO_GENERATE, int,
                         Number of dungeons to generate
                         
 The dungeons are saved as images in the svg format.
@@ -69,7 +69,9 @@ Those elements are sufficient to evaluate the difficulty of a maze if solved by 
 ## References 
 
 The codes used as basis for my own:
+
 https://scipython.com/blog/making-a-maze/
+
 https://github.com/valohai/qlearning-simple
 
 ## More results

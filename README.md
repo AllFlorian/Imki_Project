@@ -13,7 +13,7 @@ Two methods are available:
 
 The maze_generator.py file contains the classes Cell and Maze, allowing for cell (walls, keypoints) and maze (grid, dfs generation, neighbours search...) management.
 
-![Dungeon example](https://myoctocat.com/assets/images/base-octocat.svg)
+![Dungeon example](https://github.com/AllFlorian/Imki_Project/blob/main/dungeon_test_0.svg)
 
 ## Q-Learning approach
 

@@ -9,8 +9,8 @@ def main():
     # parse arguments
     parser = argparse.ArgumentParser()
     parser.add_argument('--verbose', type=bool, default=False, help="Print the training steps and save intermediate images")
-    parser.add_argument('--height', type=int, default=4, help="Dungeon grid height")
-    parser.add_argument('--width', type=int, default=4, help="Dungeon grid width")
+    parser.add_argument('--height', type=int, default=7, help="Dungeon grid height")
+    parser.add_argument('--width', type=int, default=7, help="Dungeon grid width")
     parser.add_argument('--learning_rate', type=float, default=0.5, help='How quickly the algorithm tries to learn')
     parser.add_argument('--discount', type=float, default=0.98, help='Discount for estimated future action')
     parser.add_argument('--iterations', type=int, default=500, help='Iteration count')
@@ -25,12 +25,14 @@ def main():
 
     if args.method == 'dsf':
 
-        maze = mg.Maze(nx, ny, ix, iy)
-        maze.write_svg('init.svg')
-        maze.make_maze_dfs()
+        for n in range(args.to_generate):
 
-        print(maze)
-        maze.write_svg('dungeon.svg')
+            maze = mg.Maze(nx, ny, ix, iy)
+            #maze.write_svg('init.svg')
+            maze.make_maze_dfs()
+
+            #print(maze)
+            maze.write_svg('dungeon_test_{}.svg'.format(n))
 
     elif args.method == 'qlearning':
 
@@ -38,7 +40,7 @@ def main():
 
             # setup simulation
             maze = mg.Maze(nx, ny, ix, iy)
-            maze.write_svg('init.svg')
+            #maze.write_svg('init.svg')
             total_reward = 0 # Score keeping
             last_total = 0
 

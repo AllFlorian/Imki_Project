@@ -38,6 +38,7 @@ class Agent:
         take_down = True
         
         if neighbours == []:
+            # if no valid neighbours : move agent without knocking down a wall
             take_down = False
             neighbours = self.maze.find_valid_neighbours(state, valid=False)
             direction, next_cell = random.choice(neighbours)

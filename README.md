@@ -27,6 +27,11 @@ Currently, the agent can create random mazes for a fixed position of the treasur
 
 The QLearning.py file contains the Agent class, allowing for action selection and q_table updating during training.
 
+## Requirements
+
+* Python >= 3.7
+* NumPy
+
 ## How to
 
 Call python3 main.py with the relevant arguments.

@@ -51,8 +51,8 @@ The dungeons are saved as images in the svg format.
 When using the QLearning algorithm, a qtable.txt file is generated after training. The file is then used when testing the agent.
 
 Quick use with default arguments to generate 5 dungeons:
-python3 main.py --mode train
-python3 main.py --mode test
+1. python3 main.py --mode train
+2. python3 main.py --mode test
 
 ## Discussion
 

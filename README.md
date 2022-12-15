@@ -1,5 +1,4 @@
-# Imki_Project
-Technical test
+# Technical test
 Author : Florian Allender, PhD
 ***
 
